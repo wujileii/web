@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apzz - 家长控制与隐私保护应用</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #4a6ee0 0%, #2a4cb3 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #fff;
+            color: #2a4cb3;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        section {
+            background-color: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        h2 {
+            color: #2a4cb3;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f4ff;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .feature-card {
+            background: #f8faff;
+            border-radius: 12px;
+            padding: 25px;
+            transition: transform 0.3s ease;
+            border-left: 4px solid #4a6ee0;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-card h3 {
+            color: #2a4cb3;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .feature-card h3 i {
+            margin-right: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .privacy-section {
+            background: linear-gradient(135deg, #f8faff 0%, #e8eeff 100%);
+            border-left: 5px solid #4CAF50;
+        }
+        
+        .privacy-badge {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .contact-section {
+            text-align: center;
+            background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+        }
+        
+        .contact-email {
+            display: inline-block;
+            background-color: #2a4cb3;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-email:hover {
+            background-color: #1a3c93;
+            transform: scale(1.05);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+            
+            section {
+                padding: 25px;
+            }
+            
+            .logo {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Apzz</div>
+            <p class="tagline">专业的家长控制与隐私保护解决方案，让您安心管理设备使用</p>
+            <a href="#features" class="cta-button">探索功能</a>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section id="intro">
+            <h2>应用简介</h2>
+            <p>Apzz是一款功能强大的家长控制应用，帮助家长轻松管理孩子的设备使用，同时提供全面的隐私保护功能。通过简洁直观的界面，您可以快速设置应用隐藏、限制应用安装与卸载，并利用隐私保险箱保护您的个人数据。</p>
+        </section>
+        
+        <section id="features">
+            <h2>核心功能</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>📱 应用隐藏与管理</h3>
+                    <p>轻松隐藏指定应用，防止孩子接触不适当的内容。限制应用的安装和卸载，确保设备环境安全可控。</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🔒 隐私保险箱</h3>
+                    <p>安全隐藏您的私人图片、视频和文字文件，只有通过密码或生物识别才能访问，保护您的个人隐私。</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>⏰ 使用时间控制</h3>
+                    <p>设置应用使用时间限制，帮助孩子养成良好的设备使用习惯，防止过度沉迷。</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>👨‍👩‍👧‍👦 家长监控</h3>
+                    <p>远程监控设备使用情况，了解应用使用时长和频率，及时调整管理策略。</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="privacy-section">
+            <div class="privacy-badge">隐私保护承诺</div>
+            <h2>您的数据安全是我们的首要任务</h2>
+            <p>Apzz郑重承诺：在应用使用期间，我们不会收集您的任何个人信息。所有数据仅存储在您的设备本地，不会上传到任何服务器。我们坚信隐私是每个人的基本权利，并致力于通过技术手段保护您的数据安全。</p>
+        </section>
+        
+        <section class="contact-section">
+            <h2>技术支持与联系</h2>
+            <p>如果您在使用过程中遇到任何问题，或有功能建议需要反馈，我们的技术团队随时为您提供帮助。</p>
+            <a href="mailto:jileiiwu@163.com" class="contact-email">jileiiwu@163.com</a>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2023 Apzz 应用. 保留所有权利.</p>
+        </div>
+    </footer>
+</body>
+</html>
