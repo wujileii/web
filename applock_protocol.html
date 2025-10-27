@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apzz - 家长控制与隐私保护 | 用户协议</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2980b9;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --light-bg: #f9f9f9;
+            --border-color: #e0e0e0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        body {
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: #f5f7fa;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 30px 20px;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .logo {
+            width: 60px;
+            height: 60px;
+            background-color: white;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo i {
+            color: var(--primary-color);
+            font-size: 28px;
+        }
+        
+        .app-info h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        
+        .app-info p {
+            opacity: 0.9;
+            font-size: 16px;
+        }
+        
+        .agreement-card {
+            background-color: white;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .last-updated {
+            background-color: var(--light-bg);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        .last-updated h3 {
+            color: var(--accent-color);
+            margin-bottom: 5px;
+        }
+        
+        .agreement-section {
+            margin-bottom: 30px;
+        }
+        
+        .agreement-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .agreement-section p, .agreement-section ul {
+            margin-bottom: 15px;
+        }
+        
+        .agreement-section ul {
+            padding-left: 25px;
+        }
+        
+        .agreement-section li {
+            margin-bottom: 10px;
+        }
+        
+        .highlight-box {
+            background-color: var(--light-bg);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .warning-box {
+            background-color: #fff8e1;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .contact-info {
+            background-color: #e8f4fc;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            text-align: center;
+        }
+        
+        .contact-info h3 {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+        
+        .email-link {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        .email-link:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            font-size: 14px;
+        }
+        
+        .important {
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        
+        .nav-btn {
+            background-color: var(--light-bg);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+            transition: all 0.3s;
+            border: 1px solid var(--border-color);
+        }
+        
+        .nav-btn:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .agreement-card {
+                padding: 20px;
+            }
+            
+            header {
+                padding: 20px 15px;
+            }
+            
+            .app-info h1 {
+                font-size: 20px;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .nav-btn {
+                text-align: center;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-section">
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="app-info">
+                    <h1>Apzz - 家长控制与隐私保护</h1>
+                    <p>用户协议</p>
+                </div>
+            </div>
+        </header>
+        
+        <div class="agreement-card">
+            <div class="last-updated">
+                <h3>最后更新日期</h3>
+                <p>2025年10月27日</p>
+            </div>
+            
+            <div class="agreement-section">
+                <h2>一、总则</h2>
+                <p><strong>1.1</strong> 本协议是用户（以下简称"您"）与Apzz（以下简称"我们"）之间就使用《Apzz - 家长控制与隐私保护》相关服务所订立的协议。</p>
+                
+                <div class="highlight-box">
+                    <p><strong>1.2</strong> 请您仔细阅读本协议，特别是加粗或下划线标注的条款。当您勾选"同意"、注册账户或开始使用我们的服务时，即表示您已充分阅读、理解并接受本协议的全部内容。</p>
+                </div>
+            </div>
+            
+            <div class="agreement-section">
+                <h2>二、服务内容</h2>
+                <p><strong>2.1</strong> 我们通过本App向您提供家长控制服务。</p>
+                <p><strong>2.2</strong> 我们保留随时变更、中断或终止部分或全部服务的权利。</p>
+            </div>
+            
+            <div class="agreement-section">
+                <h2>三、用户行为规范</h2>
+                <p><strong>3.1</strong> 您承诺不会利用本App从事以下行为：</p>
+                <ul>
+                    <li>违反国家法律法规</li>
+                    <li>侵犯他人合法权益</li>
+                    <li>上传、传播恶意代码或病毒</li>
+                    <li>进行任何可能损害我们系统安全的行为</li>
+                </ul>
+            </div>
+            
+            <div class="agreement-section">
+                <h2>四、隐私保护</h2>
+                <p><strong>4.1</strong> 我们将按照《<a href="https://wujileii.github.io/web/applock_private.html" target="_blank">隐私政策</a>》保护您的个人信息。</p>
+            </div>
+            
+            <div class="agreement-section">
+                <h2>五、知识产权</h2>
+                <p><strong>5.1</strong> 本App的所有内容，包括但不限于文字、图形、logo、软件等，均受知识产权法保护。</p>
+                <p><strong>5.2</strong> 未经我们明确授权，您不得复制、修改、传播或用于商业用途。</p>
+            </div>
+            
+            <div class="agreement-section">
+                <h2>六、免责声明</h2>
+                <p><strong>6.1</strong> 我们对服务的及时性、安全性、准确性不作担保。</p>
+                <p><strong>6.2</strong> 因不可抗力或非我们可控原因导致的服务中断，我们不承担责任。</p>
+                
+                <div class="warning-box">
+                    <p><strong>6.3</strong> 用户存储的视频，图片，文档均在本地，请谨慎执行卸载，删除等操作，由此带来数据丢失，我们不承担任何责任。</p>
+                    <p><strong>6.4</strong> 请牢记密码，如果你的密码丢失，将导致无法进入App，由此带来数据丢失，我们不承担任何责任。</p>
+                </div>
+            </div>
+            
+            <div class="agreement-section">
+                <h2>八、协议变更与终止</h2>
+                <p><strong>8.1</strong> 我们有权随时修改本协议，修改后的协议将在App内公布。</p>
+                <p><strong>8.2</strong> 您有权随时终止使用我们的服务。</p>
+                <p><strong>8.3</strong> 我们有权在您违反本协议时，终止向您提供服务。</p>
+            </div>
+            
+            <div class="agreement-section">
+                <h2>九、法律适用与争议解决</h2>
+                <p><strong>9.1</strong> 本协议的订立、执行和解释适用中华人民共和国法律。</p>
+                <p><strong>9.2</strong> 因本协议引起的任何争议，双方应友好协商解决；协商不成的，提交人民法院诉讼解决。</p>
+            </div>
+            
+            <div class="agreement-section">
+                <h2>十、其他</h2>
+                <p><strong>10.1</strong> 如果您对本协议有任何疑问，请联系我们。</p>
+                
+                <div class="contact-info">
+                    <h3>联系我们</h3>
+                    <p>如果您对本协议有任何疑问、意见或建议，请通过以下方式与我们联系：</p>
+                    <a href="mailto:Deihdx8889@qq.com" class="email-link">
+                        <i class="fas fa-envelope"></i> Deihdx8889@qq.com
+                    </a>
+                </div>
+                
+                <p><strong>10.2</strong> 本协议最后更新日期：2025年10月27日</p>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#" class="nav-btn">
+                    <i class="fas fa-arrow-left"></i> 返回首页
+                </a>
+                <a href="https://wujileii.github.io/web/applock_private.html" class="nav-btn" target="_blank">
+                    查看隐私政策 <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2025 Apzz - 家长控制与隐私保护 版权所有</p>
+        </footer>
+    </div>
+</body>
+</html>
